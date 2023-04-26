@@ -10,3 +10,14 @@ body {
   color: #000;
   font-family: "Poppins", sans-serif;
 }
+
+.myContainer {
+  @apply max-w-7xl px-5 mx-auto;
+}
+
+.Qtext {
+  background-image: url(./assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
