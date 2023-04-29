@@ -21,3 +21,19 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.lefthighlight {
+  margin-top: 25px;
+}
+
+.lefthighlight .editor {
+  display: block;
+}
+
+.lefthighlight .editor .card {
+  margin-top: 25px;
+}
+
+button:disabled {
+  opacity: 0.2;
+}

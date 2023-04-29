@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Editor from "../../News/Editor/Editor";
 
 const LeftSide = () => {
   const [catagory, setCatagory] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/catagory")
+    fetch("https://dragon-news-server-babuhp80-gmailcom.vercel.app/catagory")
       .then((res) => res.json())
       .then((data) => setCatagory(data));
   }, []);
@@ -22,6 +23,9 @@ const LeftSide = () => {
             );
           })}
         </ul>
+      </div>
+      <div className="lefthighlight">
+        <Editor></Editor>
       </div>
     </div>
   );

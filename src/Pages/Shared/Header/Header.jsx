@@ -3,7 +3,6 @@ import logo from "../../../assets/logo.png";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import moment from "moment";
-import { FaUserCircle } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -38,30 +37,6 @@ const Header = () => {
                 impedit iusto.
               </strong>
             </Marquee>
-          </div>
-        </div>
-        <div className="navbars">
-          <div className="navbarWrapper grid grid-cols-12">
-            <div className="navLeft col-span-4"></div>
-            <div className="navMenu col-span-4">
-              <ul className="flex items-center justify-center gap-3">
-                <li>
-                  <Link to="/home">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/career">Career</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="login col-span-4 flex items-center justify-end gap-4">
-              <FaUserCircle className="h-8 w-8" />
-              <button className="font-medium text-white bg-black py-2 px-7">
-                Login
-              </button>
-            </div>
           </div>
         </div>
       </div>
